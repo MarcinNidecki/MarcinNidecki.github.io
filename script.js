@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  var apiRoot = 'http://pure-sea-14800.herokuapp.com/v1/task/';
+  var apiRoot = 'https://pure-sea-14800.herokuapp.com/v1/task/';
   var datatableRowTemplate = $('[data-datatable-row-template]').children()[0];
   var tasksContainer = $('[data-tasks-container]');
 
