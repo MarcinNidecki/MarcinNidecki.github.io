@@ -17,7 +17,7 @@ $(document).ready(function() {
     $.ajax({
       url: requestUrl,
       method: 'GET',
-      contentType: 'application/json',
+      contentType: 'application/json; charset=utf-8',
       success: function(boards) { callback(callbackArgs, boards); }
     });
   }
@@ -68,7 +68,7 @@ $(document).ready(function() {
     $.ajax({
       url: requestUrl,
       method: 'GET',
-      contentType: "application/json",
+      contentType: "application/json; charset=utf-8",
       success: function(tasks) {
         tasks.forEach(task => {
           availableTasks[task.id] = task;
@@ -134,7 +134,7 @@ $(document).ready(function() {
       method: 'POST',
       processData: false,
       contentType: "application/json; charset=utf-8",
-      dataType: 'text',
+      dataType: 'json',
       data: JSON.stringify({
         title: taskTitle,
         content: taskContent
