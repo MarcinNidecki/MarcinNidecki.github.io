@@ -1,4 +1,3 @@
-
 $(document).ready(function() {
   const apiRoot = 'https://pure-sea-14800.herokuapp.com/v1/task/';
   const trelloApiRoot = 'https://pure-sea-14800.herokuapp.com/v1/trello/';
